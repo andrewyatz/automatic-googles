@@ -10,3 +10,7 @@ def hello():
     dateformat = "%a %b %d %H:%M:%S %Z %Y";
     # { "date": "Wed Sep 20 15:32:35 BST 2017" }
     return jsonify({"date" : now.strftime(dateformat)})
+
+
+if __name__ == '__main__':
+    app.run(debug=False,host='0.0.0.0')
